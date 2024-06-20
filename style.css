@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Averia Serif Libre", serif;
+}
+body {
+  background-color: #141414;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  max-width: 700px;
+  width: 100%;
+  background-color: #e3d5ca;
+  color: black;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(21, 21, 21, 0.6);
+}
+.container .heading {
+  border-radius: 10px;
+  margin: auto;
+  text-align: center;
+  text-decoration-line: underline;
+  font-family: serif;
+  color: black;
+  background-color: #fff;
+  width: 300px;
+  padding: 9px;
+}
+.wrapper {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+  grid-gap: 1rem;
+}
+picture {
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.5) url(weather.jpg);
+  background-blend-mode: darken;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.info {
+  padding: 1.5rem;
+  text-align: center;
+}
+.info .default_date {
+  font-size: 1.1rem;
+  color: #f0f2f1;
+}
+.info img {
+  width: 80%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+.info h2 {
+  font-size: 3rem;
+  color: #f69e2b;
+}
+.info h3 {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  color: #e3d5ca;
+}
+.temp {
+  font-size: 4rem;
+  font-weight: 800;
+}
+.icons {
+  margin-top: 20px;
+}
+
+/* content_section */
+
+.content_section {
+  padding: 1.5rem;
+}
+.content_section form {
+  margin: 1.5rem 0;
+  position: relative;
+}
+.content_section form input {
+  width: 84%;
+  outline: none;
+  background: transparent;
+  border: 1px solid #b37a4d;
+  border-radius: 5px;
+  padding: 0.7rem 1rem;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.content_section form button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.8rem 0.7rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: #b37a4d;
+}
+.day_info {
+  padding: 1rem 1rem;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  transition: all 0.3s ease-in;
+}
+.day_info .content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0;
+  border-radius: 1rem;
+  transition: all 0.2s ease-in;
+}
+.day_info .content:hover {
+  padding-left: 9px;
+  padding-right: 9px;
+  transform: scale(1.1);
+  background-color: #fff;
+  color: black;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+.day_info .content .title {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.day_info .content .value {
+  font-weight: 800;
+  color: rgb(1, 77, 1);
+}
+@media screen and (max-width: 541px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .info {
+    height: 400px;
+  }
+  .icons img {
+    width: 40%;
+  }
+  .default_day {
+    font-size: 1.1rem;
+  }
+}

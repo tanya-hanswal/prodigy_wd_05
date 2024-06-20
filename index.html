@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My-Wheather-App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">My Weather App</h1>
+      <div class="wrapper">
+        <picture>
+          <div class="info">
+            <h2 class="default_day">Wednesday</h2>
+            <span class="default_date">12 sep 2024</span>
+            <div class="icons">
+              <img src=" https://openweathermap.org/img/wn/10d@4x.png" alt="" />
+              <h2 class="temp">23°C</h2>
+              <h3 class="cloudtext">overcast clouds</h3>
+            </div>
+            <!--end icons-->
+          </div>
+          <!--end info-->
+        </picture>
+        <div class="content_section">
+          <form>
+            <input type="text" placeholder="Enter City" class="input_field" />
+            <button type="submit" class="btn_search">Search</button>
+          </form>
+
+          <div class="day_info">
+            <div class="content">
+              <p class="title">Name</p>
+              <span class="value city">united kingdom</span>
+            </div>
+            <!--end content-->
+            <div class="content">
+              <p class="title">Temp</p>
+              <span class="value">23°C</span>
+            </div>
+            <!--end content-->
+            <div class="content">
+              <p class="title">Humidity</p>
+              <span class="value">2%</span>
+            </div>
+            <!--end content-->
+            <div class="content">
+              <p class="title">Wind Speed</p>
+              <span class="value">2.92 km/h</span>
+            </div>
+            <!--end content-->
+          </div>
+          <!--end day info-->
+        </div>
+        <!--end content section-->
+      </div>
+      <!--end wrapper-->
+    </div>
+    <!--end container-->
+  </body>
+  <script src="script.js"></script>
+</html>
